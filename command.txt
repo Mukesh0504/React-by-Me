@@ -1,0 +1,17 @@
+create React app:-
+   npx create-react-app file-name
+
+to start:-
+    npm run start
+
+
+
+
+create vite app:-
+    npm create vite@latest 
+
+to install node module:-
+    npm i / npm install
+
+to run:-
+    npm run dev

@@ -1,0 +1,40 @@
+body {
+    height: 90vh;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#root {
+    padding: 40px 20px;
+    color: black;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.07s ease-in;
+}
+
+#add:hover {
+    outline: 1px solid green;
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+#remove:hover {
+    outline: 1px solid red;
+    background-color: red;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
