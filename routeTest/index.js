@@ -4,4 +4,4 @@ import Contact from './src/components/contact'
 
 
 
-export { Home, About, Contact }
+export { Home, About, Contact}
