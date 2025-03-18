@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState } from 'react'
 import { useTodo } from '../contexts/TodoContext'
 
 function TodoItem({ todo }) {
@@ -11,11 +11,11 @@ function TodoItem({ todo }) {
 
 
   const editTodo = () => {
-    updateTodo(todo.id, { ...todo, todo: todoMessage })
-    setIsTodoEditable(false)
+    updateTodo(todo.id, { ...todo, todo: todoMsg })
+    setIsTodoEditable(true)
   }
   const toggleCompleted = () => {
-    toggleCompleted(todo.id)
+    toggleComplete(todo.id)
   }
 
   return (
@@ -40,11 +40,11 @@ function TodoItem({ todo }) {
       />
       {/* Edit, Save Button */}
       <button
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
+        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50 cursor-pointer"
         onClick={() => {
           if (todo.completed) return;
 
-          if (isTodoEditable) {
+          if (!isTodoEditable) {
             editTodo();
           } else setIsTodoEditable((prev) => !prev);
         }}
