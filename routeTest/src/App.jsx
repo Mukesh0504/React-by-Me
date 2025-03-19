@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { NavLink, Outlet, redirect } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 
 function App() {
 
