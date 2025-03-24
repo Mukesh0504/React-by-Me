@@ -10,8 +10,13 @@ function AddTodo() {
 
     const addTodoHandler = (e) => {
         e.preventDefault()
-        dispatch(addTodo(input))
-        setInput('')
+        if (input) {
+            dispatch(addTodo(input))
+            setInput('')
+        }
+        else {
+            alert("please write something...")
+        }
     }
 
     return (
