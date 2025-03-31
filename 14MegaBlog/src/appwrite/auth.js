@@ -55,6 +55,7 @@ export class AuthService {
             console.log("Appwrite service :: logout :: error", error);
         }
     }
+
 }
 
 
