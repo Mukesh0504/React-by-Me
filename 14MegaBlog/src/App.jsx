@@ -4,11 +4,11 @@ import { useDispatch } from 'react-redux'
 import authservice from '../src/appwrite/auth'
 import { login, logout } from './store/authSlice'
 import { Header, Footer } from '../src/components/index'
+
 function App() {
 
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
-
 
 
   useEffect(() => {
